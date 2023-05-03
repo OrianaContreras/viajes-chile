@@ -6,17 +6,17 @@ $(function () {
 })
 
 $(document).ready(function() {
-    $('#enviarCorreo').click(function() {
-        alert('El correo fue enviado correctamente...');
-    });
 
-    $('h3').on('dblclick', function() {
-        if ($(this).text() === 'INGREDIENTES' || $(this).text() === 'PREPARACIÓN') {
-            $(this).css('color', 'red');
-        }
+    $('#enviarFormulario').click(function() {
+        alert('El mensaje fue enviado correctamente...');
     });
 
     $('.card-title').click(function() {
     $(this).siblings('.card-text').toggle("slow");
     });  
-});  
+});
+
+$(document).scroll(function () {
+    var $nav = $(".sticky-top");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+});

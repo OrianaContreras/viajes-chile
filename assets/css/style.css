@@ -13,6 +13,11 @@ body {
     background-color: black;
 }
 
+.sticky-top.scrolled {
+    background-color: #000000 !important;
+    transition: background-color 200ms linear;
+}
+
 .icon-logo-vc {
     width: 25px;
 }
@@ -79,6 +84,42 @@ body {
     .c-section-second {
         display: none;
     }
+
+    footer {
+        flex-direction: column-reverse;
+        justify-content: center !important;
+        min-height: 150px;
+    }
+
+    .logo-section {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .rrss-section {
+        width: 100% !important;
+        background-color: #0FCAEA !important;
+        padding-top: 1rem !important;
+    }
+
+    .line {
+        width: 90% !important;
+    }
+
+}
+
+/* -- MEDIAQUERY PARA TABLET -- */
+
+@media (min-width: 48em) and (max-width: 64em) {
+    .c-section-second {
+        display: none;
+    }
+    
+    .rrss-section {
+        width: 20% !important;
+        
+    }
+
 }
 
 

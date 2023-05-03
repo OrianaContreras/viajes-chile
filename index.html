@@ -15,6 +15,7 @@
     <script src="assets/js/script.js"></script>  
 </head>
 <body>
+    <!-- AL HACER SCROLL EL COLOR DEL NAVBAR CAMBIA -->
     <nav class="navbar sticky-top navbar-expand-lg text-bg-dark bg-transparent" data-bs-theme="dark" id="nav">
         <div class="container">
             <img src="assets/img/viajes.svg" alt="logo-vc" class="icon-logo-vc m-2"><a class="navbar-brand title-logo-vc" href="#">Viajes Chile</a>
@@ -24,9 +25,9 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
                 <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
-                <a class="nav-link text-white" href="#">Quienes Somos</a>
-                <a class="nav-link text-white" href="#">Destacados</a>
-                <a class="nav-link text-white" href="#">Contacto</a>
+                <a class="nav-link text-white" href="#quienesSomos">Quienes Somos</a>
+                <a class="nav-link text-white" href="#destacados">Destacados</a>
+                <a class="nav-link text-white" href="#contacto">Contacto</a>
                 </div>
             </div>
         </div>
@@ -59,7 +60,7 @@
             </button>
         </div>
     </section>
-    <section class="c-section-second ">
+    <section class="c-section-second " id="quienesSomos">
         <h2 class="text-center text-white m-5">¿QUIÉNES SOMOS?</h2>
         <div class="container line d-flex justify-content-around pb-5">
             <div class="card bg-black pt-5 mx-0 " style="width: 18rem;">
@@ -88,12 +89,12 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="destacados">
         <!-- AL HACE CLICK SOBRE LOS TILTE DE LAS CARD SE DESAPARECE EL PÁRRAFO Y VICEVERSA -->
         <h2 class="text-center text-white m-5">DESTACADOS</h2>
         <div class="container line">
-            <div class="row pt-5 text-center">
-                <div class="col-10 col-sm-3 mb-5">
+            <div class="row pt-5 text-center justify-content-center">
+                <div class="col-10 col-lg-3 col-sm-6 mb-5">
                     <div class="card bg-turquesa border-light text-white">
                         <img src="assets/img/card1.jpg" class="card-img-top" alt="Clínica Dental Quijada">
                         <div class="card-body">
@@ -103,7 +104,7 @@
                         
                     </div>
                 </div>
-                <div class="col-10 col-sm-3 mb-5">
+                <div class="col-10 col-lg-3 col-sm-6 mb-5">
                     <div class="card bg-turquesa border-light text-white">
                         <img src="assets/img/card2.jpg" class="card-img-top" alt="Clínica Dental Quijada">
                         <div class="card-body">
@@ -113,7 +114,7 @@
                         
                     </div>
                 </div>
-                <div class="col-10 col-sm-3 mb-5">
+                <div class="col-10 col-lg-3 col-sm-6 mb-5">
                     <div class="card bg-turquesa border-light text-white">
                         <img src="assets/img/card3.jpg" class="card-img-top" alt="Clínica Dental Quijada">
                         <div class="card-body">
@@ -123,7 +124,7 @@
                         
                     </div>
                 </div>
-                <div class="col-10 col-sm-3 mb-5">
+                <div class="col-10 col-lg-3 col-sm-6 mb-5">
                     <div class="card bg-turquesa border-light text-white">
                         <img src="assets/img/card4.jpg" class="card-img-top" alt="Clínica Dental Quijada">
                         <div class="card-body">
@@ -135,8 +136,8 @@
             </div>
         </div>
     </section>
-    <section>
-        <h2 class="text-center text-white m-5">CONTACTO</h2>
+    <section id="contacto">
+        <h2 class="text-center text-white m-5 mt-2">CONTACTO</h2>
         <div class="container mb-5 line">
             <div row>
                 <div class="mb-3 pt-5">
@@ -152,12 +153,21 @@
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
                 <!-- AL HACE HOVER SOBRE EL BOTÓN MUESTRA UN TOOLTIP DE RECORDATORIO -->
-                <button type="button" class="btn btn-info text-white" data-bs-toggle="tooltip" data-bs-title="Recuerda llenar todos los campos antes de enviar">Enviar</button>
+                <!-- AL HACE CLICK SOBRE EL BOTÓN APARECE UN ALERT -->
+                <button type="button" id="enviarFormulario" class="btn btn-info text-white" data-bs-toggle="tooltip" data-bs-title="Recuerda llenar todos los campos antes de enviar">Enviar</button>
             </div>
         </div>
     </section>
-    <footer class="bg-turquesa">
-        <div class="text-center p-3"><img src="assets/img/viajes.svg" alt="logo-vc" class="icon-logo-vc m-2"><a class="title-logo-vc footer-vc text-white" href="#nav">Viajes Chile</a></div>        
+    <footer class="bg-turquesa d-flex justify-content-around ">
+        <div class="text-center p-3 logo-section">
+            <img src="assets/img/viajes.svg" alt="logo-vc" class="icon-logo-vc m-2"><a class="title-logo-vc footer-vc text-white" href="#nav">Viajes Chile</a>
+        </div> 
+        <div class="text-center d-flex justify-content-around align-items-center rrss-section" style="width: 10%;">
+            <i class="fa-brands fa-square-github fa-xl" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-square-twitter fa-xl" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-square-facebook fa-xl" style="color: #ffffff;"></i>
+        </div>     
     </footer>
     <script src="https://kit.fontawesome.com/72a4b8ea1f.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
