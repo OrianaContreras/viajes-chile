@@ -10,5 +10,77 @@ body {
     padding: 0;
     margin: 0;
     border: 0;
+    background-color: black;
 }
+
+.icon-logo-vc {
+    width: 25px;
+}
+
+.title-logo-vc {
+    font-family: 'DM Serif Text', serif;
+}
+
+.c-section-first {
+    margin-top: -100px;
+}
+
+.carousel-slider {
+    width: 100vw;
+}
+
+.br-none {
+    border-radius: 0 !important;
+}
+
+.card-img-top {
+    max-height: 150px;
+}
+
+.bg-turquesa {
+    background-color: #0FCAEA;
+}
+
+.footer-vc{
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.line {
+    border-top: #ffffff solid 1px;
+}
+
+
+/* -- MEDIAQUERY PARA DESKTOP -- */
+@media only screen and (min-width: 40em) {
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    .card {
+        height: 360px;
+    }
+
+}
+
+
+/* -- MEDIAQUERY PARA MOBILE -- */
+
+@media only screen and (max-width: 40em) {
+    .c-section-second {
+        display: none;
+    }
+}
+
+
+
 

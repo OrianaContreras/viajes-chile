@@ -15,7 +15,150 @@
     <script src="assets/js/script.js"></script>  
 </head>
 <body>
-    
+    <nav class="navbar sticky-top navbar-expand-lg text-bg-dark bg-transparent" data-bs-theme="dark" id="nav">
+        <div class="container">
+            <img src="assets/img/viajes.svg" alt="logo-vc" class="icon-logo-vc m-2"><a class="navbar-brand title-logo-vc" href="#">Viajes Chile</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link text-white" href="#">Quienes Somos</a>
+                <a class="nav-link text-white" href="#">Destacados</a>
+                <a class="nav-link text-white" href="#">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="c-section-first" >
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner p-0">
+                <div class="carousel-item active p-0" data-bs-interval="10000">
+                    <img src="assets/img/carousel1.jpg" class="carousel-slider m-0" alt="">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="assets/img/carousel2.jpg" class="carousel-slider m-0" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="assets/img/carousel3.jpg" class="carousel-slider m-0" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next " style="width: 25%;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon " aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section class="c-section-second ">
+        <h2 class="text-center text-white m-5">¿QUIÉNES SOMOS?</h2>
+        <div class="container line d-flex justify-content-around pb-5">
+            <div class="card bg-black pt-5 mx-0 " style="width: 18rem;">
+                <div class="card-header bg-info br-none text-center">
+                    <i class="fa-solid fa-plane" style="color: #ffffff;"></i>
+                </div>
+                <div>
+                    <p class="text-white"><strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</p>
+                </div>
+            </div>
+            <div class="card bg-black pt-5 mx-0" style="width: 18rem;">
+                <div>
+                    <p class="text-white"><strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</p>
+                </div>
+                <div class="card-footer bg-info br-none text-center">
+                    <i class="fa-sharp fa-solid fa-mountain" style="color: #ffffff;"></i>
+                </div>
+            </div>
+            <div class="card bg-black pt-5 mx-0" style="width: 18rem;">
+                <div class="card-header bg-info br-none text-center">
+                    <i class="fa-solid fa-route" style="color: #ffffff;"></i>
+                </div>
+                <div>
+                    <p class="text-white"><strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <!-- AL HACE CLICK SOBRE LOS TILTE DE LAS CARD SE DESAPARECE EL PÁRRAFO Y VICEVERSA -->
+        <h2 class="text-center text-white m-5">DESTACADOS</h2>
+        <div class="container line">
+            <div class="row pt-5 text-center">
+                <div class="col-10 col-sm-3 mb-5">
+                    <div class="card bg-turquesa border-light text-white">
+                        <img src="assets/img/card1.jpg" class="card-img-top" alt="Clínica Dental Quijada">
+                        <div class="card-body">
+                            <h3 class="card-title">Lorem ipsum dolor</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ullam corrupti temporibus in animi inventore totam dolor.</p>  
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-10 col-sm-3 mb-5">
+                    <div class="card bg-turquesa border-light text-white">
+                        <img src="assets/img/card2.jpg" class="card-img-top" alt="Clínica Dental Quijada">
+                        <div class="card-body">
+                            <h3 class="card-title">Cubilia elementum posuere</h3>
+                            <p class="card-text">Cubilia elementum posuere arcu rhoncus egestas lectus, diam aliquam laoreet ac eleifend risus, urna auctor inceptos mattis dapibus.</p>  
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-10 col-sm-3 mb-5">
+                    <div class="card bg-turquesa border-light text-white">
+                        <img src="assets/img/card3.jpg" class="card-img-top" alt="Clínica Dental Quijada">
+                        <div class="card-body">
+                            <h3 class="card-title">Ducimus sit aperiam</h3>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus sit aperiam repellat asperiores cupiditate, provident minima sint nihil ut sequi neque.</p>  
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-10 col-sm-3 mb-5">
+                    <div class="card bg-turquesa border-light text-white">
+                        <img src="assets/img/card4.jpg" class="card-img-top" alt="Clínica Dental Quijada">
+                        <div class="card-body">
+                            <h3 class="card-title">Lorem ipsum dolor sit amet</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aut possimus quisquam deserunt ad quis odio modi amet nihil mollitia.</p>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2 class="text-center text-white m-5">CONTACTO</h2>
+        <div class="container mb-5 line">
+            <div row>
+                <div class="mb-3 pt-5">
+                    <label for="exampleFormControlInput1" class="form-label text-white">Nombre</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label text-white">Asunto</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label text-white">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <!-- AL HACE HOVER SOBRE EL BOTÓN MUESTRA UN TOOLTIP DE RECORDATORIO -->
+                <button type="button" class="btn btn-info text-white" data-bs-toggle="tooltip" data-bs-title="Recuerda llenar todos los campos antes de enviar">Enviar</button>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-turquesa">
+        <div class="text-center p-3"><img src="assets/img/viajes.svg" alt="logo-vc" class="icon-logo-vc m-2"><a class="title-logo-vc footer-vc text-white" href="#nav">Viajes Chile</a></div>        
+    </footer>
     <script src="https://kit.fontawesome.com/72a4b8ea1f.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
     integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
